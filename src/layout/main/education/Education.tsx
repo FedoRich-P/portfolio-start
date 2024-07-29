@@ -7,7 +7,7 @@ import { EducationWorkItem } from '../../../components/education.work.item/Educa
 
 export function Education() {
   return (
-    <EducationSection>
+    <EducationSection id="education">
       <Container>
         <SectionTitle>Education</SectionTitle>
         <MainText $maxwidth="438px" $mb="50px">

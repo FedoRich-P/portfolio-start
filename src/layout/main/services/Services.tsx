@@ -11,7 +11,7 @@ import { ServisCard } from './ServisCard';
 
 export function Services() {
   return (
-    <ServicesSection>
+    <ServicesSection id="services">
       <Container>
         <SectionTitle $mb="25px">My Services</SectionTitle>
         <MainText as={ServicesText} $mb="50px">
@@ -78,6 +78,5 @@ const ServisCardItem = styled.li`
   width: 100%;
   min-height: 225px;
   text-align: center;
-  border: 1px solid ${myTheme.colors.main};
   background-color: #fff;
 `;

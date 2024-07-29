@@ -16,7 +16,7 @@ export const GlobalStyles = createGlobalStyle`
   button {
     cursor: pointer;
     background-color: transparent ;
-  border-color: transparent;
+    border-color: transparent;
 
 
   }
@@ -34,6 +34,5 @@ export const GlobalStyles = createGlobalStyle`
   section {
     margin-bottom: 70px;
     text-align: center;
-    outline: 1px solid blue;
   }
 `;

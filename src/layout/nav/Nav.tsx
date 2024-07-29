@@ -9,17 +9,17 @@ import { myTheme } from '../../components/theme/Theme.staled';
 export function Nav() {
   return (
     <NavWrapper>
-      <NavBtn>
+      <NavBtn aria-label="Change contrast ">
         <Icon width="30" height="30" viewBox="0 0 30 30" iconId="contrast" />
       </NavBtn>
       <NavList>
         <NavItem>
-          <NavLink href="#">
+          <NavLink href="#home" aria-label="Go to home">
             <Icon width="19" height="19" viewBox="0 0 19 19" iconId="home" />
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="#">
+          <NavLink href="#services" aria-label="Go to services">
             <Icon
               width="19"
               height="19"
@@ -29,12 +29,12 @@ export function Nav() {
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="#">
+          <NavLink href="#education" aria-label="Go to CV">
             <Icon width="19" height="19" viewBox="0 0 19 19" iconId="cv" />
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="#">
+          <NavLink href="#portfolio" aria-label="Go to Portfolio">
             <Icon
               width="19"
               height="19"
@@ -44,12 +44,12 @@ export function Nav() {
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="#">
+          <NavLink href="#blog" aria-label="Go to Blog">
             <Icon width="19" height="19" viewBox="0 0 19 19" iconId="blog" />
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="#">
+          <NavLink href="#contact" aria-label="Go to Contact">
             <Icon width="19" height="19" viewBox="0 0 19 19" iconId="contact" />
           </NavLink>
         </NavItem>
@@ -59,16 +59,15 @@ export function Nav() {
 }
 
 const NavWrapper = styled.nav`
-  /* position: absolute;
+  position: fixed;
   top: 0;
-  right: calc(100vw / 6); */
+  right: calc(100vw / 2 - 48vw);
   padding: 50px 22px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   flex: 0 1 108px;
-  border: 1px solid ${myTheme.colors.main};
   background-color: #fff;
 `;
 const NavBtn = styled.button`

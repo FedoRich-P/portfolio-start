@@ -91,6 +91,9 @@ const SitebarWrapper = styled.ul`
 `;
 
 const Aside = styled.aside`
+  position: absolute;
+  top: 0;
+  left: 0;
   padding: 50px 46px 25px 40px;
   max-width: 305px;
   background-color: #fff;

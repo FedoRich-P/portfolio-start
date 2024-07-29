@@ -29,7 +29,7 @@ export function EducationWorkItem(props: EducationWorkItemPropsType) {
   );
 }
 
-const Wrapper = styled.div`
+const Wrapper = styled.li`
   padding: 30px 0;
   /* padding-top: 28px;
   padding-bottom: 10px; */

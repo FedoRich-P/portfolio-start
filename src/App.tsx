@@ -19,8 +19,8 @@ import { Footer } from './layout/main/footer/Footer';
 function App() {
   return (
     <SectionWrapper>
-      <Sitebar />
       <MainSection>
+        <Sitebar />
         <Header />
         <Services />
         <Plans />
@@ -32,24 +32,24 @@ function App() {
         <UserInfoAndContact />
         <Map />
         <Logos />
+        <Nav />
       </MainSection>
-      <Nav />
       <Footer />
     </SectionWrapper>
   );
 }
 
-const MainSection = styled.main``;
+const MainSection = styled.main`
+  /* position: relative; */
+`;
 const SectionWrapper = styled.div`
   margin: 0 auto;
   padding: 0 15px;
+  padding-left: 335px;
+  padding-right: 135px;
+
   max-width: 1470px;
   position: relative;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  column-gap: 27px;
 `;
 
 export default App;

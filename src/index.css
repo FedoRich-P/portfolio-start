@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -9,8 +12,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  background-color:antiquewhite;
+  background-color: #f0f0f6
 }
 
 code {

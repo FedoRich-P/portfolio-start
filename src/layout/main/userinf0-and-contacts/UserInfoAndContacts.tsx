@@ -26,7 +26,7 @@ export function UserInfoAndContact() {
             <FormButton as={MainBtn}>send message</FormButton>
           </UserForm>
         </LeftSection>
-        <RightSection>
+        <RightSection id="contact">
           <SectionTitle $mb="50px">Contact information</SectionTitle>
           <FlexWrapper $direction="column" $gap="18px">
             <Block>
@@ -62,7 +62,9 @@ export function UserInfoAndContact() {
               </BlockIcon>
               <FlexWrapper $justify="space-between" $mb="14px">
                 <ContactsName>Email:</ContactsName>
-                <ContactsValue as="a">youremail@gmail.com</ContactsValue>
+                <ContactsValue as="a" href="mailto:youremail@gmail.com">
+                  youremail@gmail.com
+                </ContactsValue>
               </FlexWrapper>
               <FlexWrapper $justify="space-between" $mb="14px">
                 <ContactsName>Skype:</ContactsName>
@@ -88,11 +90,15 @@ export function UserInfoAndContact() {
               </FlexWrapper>
               <FlexWrapper $justify="space-between" $mb="14px">
                 <ContactsName>Office:</ContactsName>
-                <ContactsValue as="a">+58 (021)356 587 235</ContactsValue>
+                <ContactsValue as="a" href="tel:+58021356587235">
+                  +58 (021)356 587 235
+                </ContactsValue>
               </FlexWrapper>
               <FlexWrapper $justify="space-between">
                 <ContactsName>Personal:</ContactsName>
-                <ContactsValue as="a">+58 (021)356 587 235</ContactsValue>
+                <ContactsValue as="a" href="tel:+58021356587235">
+                  +58 (021)356 587 235
+                </ContactsValue>
               </FlexWrapper>
             </Block>
           </FlexWrapper>

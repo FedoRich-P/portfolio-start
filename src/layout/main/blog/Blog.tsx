@@ -12,7 +12,7 @@ import arrayIcon from '../../../assets/icons/icons-svg/blog-button-array.svg';
 
 export function Blog() {
   return (
-    <BlogSection>
+    <BlogSection id="blog">
       <Container>
         <SectionTitle>Blog</SectionTitle>
         <MainText $maxwidth="438px">

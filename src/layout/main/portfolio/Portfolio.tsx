@@ -14,7 +14,7 @@ const btnsArray = [
 
 export function Portfolio() {
   return (
-    <PortfolioSection>
+    <PortfolioSection id="portfolio">
       <Container>
         <SectionTitle>Portfolio</SectionTitle>
         <MainText $maxwidth="438px" $mb="50px">

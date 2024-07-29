@@ -10,7 +10,7 @@ import { myTheme } from '../../../components/theme/Theme.staled';
 
 export function Header() {
   return (
-    <HeaderWrapper>
+    <HeaderWrapper id="home">
       <Container as={FlexWrapper}>
         <HeaderDescr>
           <HeaderSuPTitle>I’m Rayan Adlrdard</HeaderSuPTitle>
