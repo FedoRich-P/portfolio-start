@@ -10,6 +10,8 @@ import { Education } from './layout/main/education/Education';
 import { Nav } from './layout/nav/Nav';
 import { WorkHistory } from './layout/main/workhistory/WorkHistory';
 import { Portfolio } from './layout/main/portfolio/Portfolio';
+import { Blog } from './layout/main/blog/Blog';
+import { UserInfoAndContact } from './layout/main/userinf0-and-contacts/UserInfoAndContacts';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Education />
         <WorkHistory />
         <Portfolio />
+        <Blog />
+        <UserInfoAndContact />
       </MainSection>
       <Nav />
     </FlexWrapper>
