@@ -3,11 +3,12 @@ import { myTheme } from '../theme/Theme.staled';
 
 type MainBtnPropsType = {
   width?: string;
+  padding?: string;
 };
 
 export const MainBtn = styled.button<MainBtnPropsType>`
   width: ${(props) => props.width};
-  padding: 10px 40px;
+  padding: ${(props) => props.padding};
   border: none;
   font-weight: 600;
   font-size: 14px;

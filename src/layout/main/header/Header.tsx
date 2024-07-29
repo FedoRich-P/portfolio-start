@@ -36,6 +36,7 @@ const HeaderWrapper = styled.section`
   background-image: url(${HeaderBG});
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #fff;
 `;
 const HeaderDescr = styled.div`
   max-width: 500px;

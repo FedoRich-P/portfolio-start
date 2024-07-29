@@ -36,4 +36,5 @@ const ServisCardItem = styled.li`
   min-height: 225px;
   text-align: center;
   border: 1px solid ${myTheme.colors.main};
+  background-color: #fff;
 `;

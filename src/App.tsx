@@ -12,10 +12,13 @@ import { WorkHistory } from './layout/main/workhistory/WorkHistory';
 import { Portfolio } from './layout/main/portfolio/Portfolio';
 import { Blog } from './layout/main/blog/Blog';
 import { UserInfoAndContact } from './layout/main/userinf0-and-contacts/UserInfoAndContacts';
+import { Map } from './layout/main/map/Map';
+import { Logos } from './layout/main/logos/Logos';
+import { Footer } from './layout/main/footer/Footer';
 
 function App() {
   return (
-    <FlexWrapper $align="flex-start" $wrap="wrap">
+    <SectionWrapper>
       <Sitebar />
       <MainSection>
         <Header />
@@ -27,12 +30,26 @@ function App() {
         <Portfolio />
         <Blog />
         <UserInfoAndContact />
+        <Map />
+        <Logos />
       </MainSection>
       <Nav />
-    </FlexWrapper>
+      <Footer />
+    </SectionWrapper>
   );
 }
 
 const MainSection = styled.main``;
+const SectionWrapper = styled.div`
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1470px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  column-gap: 27px;
+`;
 
 export default App;

@@ -5,6 +5,7 @@ import { SectionTitle } from '../../../components/titles/SectionTitle';
 import { Icon } from '../../../components/icon/Icon';
 import { myTheme } from '../../../components/theme/Theme.staled';
 import { FlexWrapper } from '../../../components/flex/FlexWrapper';
+import { link } from 'fs';
 
 export function UserInfoAndContact() {
   return (
@@ -37,7 +38,18 @@ export function UserInfoAndContact() {
                   viewBox="0 0 19 19"
                 />
               </BlockIcon>
-              <Description></Description>
+              <FlexWrapper $justify="space-between" $mb="14px">
+                <ContactsName>Country:</ContactsName>
+                <ContactsValue>Bangladesh</ContactsValue>
+              </FlexWrapper>
+              <FlexWrapper $justify="space-between" $mb="14px">
+                <ContactsName>City:</ContactsName>
+                <ContactsValue>Dhaka</ContactsValue>
+              </FlexWrapper>
+              <FlexWrapper $justify="space-between">
+                <ContactsName>Streat:</ContactsName>
+                <ContactsValue>35 vhatara, Badda</ContactsValue>
+              </FlexWrapper>
             </Block>
             <Block>
               <BlockIcon>
@@ -48,7 +60,18 @@ export function UserInfoAndContact() {
                   viewBox="0 0 19 19"
                 />
               </BlockIcon>
-              <Description></Description>
+              <FlexWrapper $justify="space-between" $mb="14px">
+                <ContactsName>Email:</ContactsName>
+                <ContactsValue as="a">youremail@gmail.com</ContactsValue>
+              </FlexWrapper>
+              <FlexWrapper $justify="space-between" $mb="14px">
+                <ContactsName>Skype:</ContactsName>
+                <ContactsValue as="a">@yourusername</ContactsValue>
+              </FlexWrapper>
+              <FlexWrapper $justify="space-between">
+                <ContactsName>Telegram:</ContactsName>
+                <ContactsValue as="a">@yourusername</ContactsValue>
+              </FlexWrapper>
             </Block>
             <Block>
               <BlockIcon>
@@ -59,7 +82,18 @@ export function UserInfoAndContact() {
                   viewBox="0 0 19 19"
                 />
               </BlockIcon>
-              <Description></Description>
+              <FlexWrapper $justify="space-between" $mb="14px">
+                <ContactsName>Support services:</ContactsName>
+                <ContactsValue>15369</ContactsValue>
+              </FlexWrapper>
+              <FlexWrapper $justify="space-between" $mb="14px">
+                <ContactsName>Office:</ContactsName>
+                <ContactsValue as="a">+58 (021)356 587 235</ContactsValue>
+              </FlexWrapper>
+              <FlexWrapper $justify="space-between">
+                <ContactsName>Personal:</ContactsName>
+                <ContactsValue as="a">+58 (021)356 587 235</ContactsValue>
+              </FlexWrapper>
             </Block>
           </FlexWrapper>
         </RightSection>
@@ -103,6 +137,7 @@ const UserForm = styled.form`
     font-size: 18px;
     line-height: 124%;
     background-color: #f0f0f6;
+    border-color: transparent;
 
     &::placeholder {
       color: ${myTheme.colors.black};
@@ -110,6 +145,7 @@ const UserForm = styled.form`
   }
 
   textarea {
+    margin-bottom: 26px;
     height: 210px;
     overflow-y: scroll;
     resize: none;
@@ -119,7 +155,9 @@ const InputName = styled.input``;
 const InputMail = styled.input``;
 const InputSubject = styled.input``;
 const AreaMessage = styled.textarea``;
-const FormButton = styled.textarea``;
+const FormButton = styled.textarea`
+  padding: 9px 25px;
+`;
 const RightSection = styled.section``;
 const BlockIcon = styled.div`
   margin: 0 auto;
@@ -139,4 +177,19 @@ const Block = styled.div`
   background-color: #fff;
 `;
 
-const Description = styled.div``;
+const ContactsName = styled.span`
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 124%;
+  text-transform: capitalize;
+  color: ${myTheme.colors.grey};
+`;
+
+const ContactsValue = styled.span`
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  text-transform: capitalize;
+  text-align: right;
+  color: ${myTheme.colors.grey};
+`;

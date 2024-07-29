@@ -140,6 +140,24 @@ type PlansListPropsType = {
 const PlanList = styled.ul<PlansListPropsType>`
   margin-bottom: 21px;
   text-align: start;
+
+  ${(props) =>
+    props.silver &&
+    css<PlansListPropsType>`
+      & li:nth-child(n + 3) {
+        background-image: url(${Close});
+        color: ${myTheme.colors.grey};
+      }
+    `}
+
+  ${(props) =>
+    props.gold &&
+    css<PlansListPropsType>`
+      & li:nth-child(n + 5) {
+        background-image: url(${Close});
+        color: ${myTheme.colors.grey};
+      }
+    `}
 `;
 
 /* ${(props) =>

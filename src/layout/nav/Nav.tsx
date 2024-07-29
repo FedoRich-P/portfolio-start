@@ -58,10 +58,10 @@ export function Nav() {
   );
 }
 
-const NavWrapper = styled.div`
-  position: fixed;
+const NavWrapper = styled.nav`
+  /* position: absolute;
   top: 0;
-  right: 0;
+  right: calc(100vw / 6); */
   padding: 50px 22px;
   display: flex;
   flex-direction: column;
@@ -69,6 +69,7 @@ const NavWrapper = styled.div`
   align-items: center;
   flex: 0 1 108px;
   border: 1px solid ${myTheme.colors.main};
+  background-color: #fff;
 `;
 const NavBtn = styled.button`
   margin-bottom: 177px;

@@ -93,6 +93,7 @@ const SitebarWrapper = styled.ul`
 const Aside = styled.aside`
   padding: 50px 46px 25px 40px;
   max-width: 305px;
+  background-color: #fff;
 `;
 
 const ExtraSkillsTitle = styled.li`
@@ -115,6 +116,7 @@ const ExtraSkillsTitle = styled.li`
 `;
 
 const SitebarBtn = styled.button`
+  padding: 10px 40px;
   position: relative;
   width: 100%;
   &::after {

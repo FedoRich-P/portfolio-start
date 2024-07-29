@@ -74,11 +74,10 @@ const ServicesText = styled.p`
 
 const ServisCardItem = styled.li`
   padding: 31px 25px 25px;
-  /* padding-top: 31px;
-  padding-bottom: 42px; */
   max-width: 310px;
   width: 100%;
   min-height: 225px;
   text-align: center;
   border: 1px solid ${myTheme.colors.main};
+  background-color: #fff;
 `;
